@@ -12,3 +12,9 @@ class Vacuna(models.Model):
     nombrevacuna = models.CharField(max_length=40)
     fecha = models.DateField()
 
+class Trabajador(models.Model):
+    nombre = models.CharField(max_length=40)
+    appaterno = models.CharField(max_length=40)
+    apmaterno = models.CharField(max_length=40)
+    rut = models.CharField(max_length=10)
+    telefono = models.CharField(max_length=10)
